@@ -1,17 +1,30 @@
-/* font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
-
-#header{
-    position:absolute;
-    top:0px;
+#header::before{
+    content: "";
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(0,0,0,1)) , url('../images/cover.jpg');   */
+    background-image:  url('../images/cover.jpg');  
+    position: absolute;
+    top: 0px;
     left: 0px;
+    z-index: -1;    
+    height: 760px;
     width: 100%;
-    height: 100%;    
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 60%, rgba(0,0,0,1)) , url('../images/cover.jpg');  
-    background-size: cover;    
-    
+    background-size: cover;
 }
+#header{
+    height: 760px;
+}
+
+.my-navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+        }
 .navbar-brand{
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -20,7 +33,7 @@ font-family: 'Roboto', sans-serif; */
     line-height: 40px;
 }
 .navbar-brand:focus, .navbar-brand:hover{
-    color: turquoise;
+    color: blue;
 }
 .navbar{
     z-index: 1;    
@@ -29,14 +42,16 @@ font-family: 'Roboto', sans-serif; */
     border-bottom: 1px solid gray;
 }
 .nav-link{
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;    
     color: white;
+   
 }
 .nav-link:hover{
     color:  white;
     border-bottom: 4px solid red;
+    
 }
+
 @media only screen and (max-width: 992px) {
     .navbar-collapse{
         padding: 20px;
@@ -52,4 +67,48 @@ font-family: 'Roboto', sans-serif; */
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.559);
     }
+    
+
+    .navbar-nav{
+         --bs-nav-link-hover-color:silver;       
+         
     }
+    .dropdown-menu{
+        --bs-dropdown-link-active-bg:rgb(7, 7, 7);
+    }
+}
+
+.navbar-nav{
+    --bs-nav-link-hover-color:silver;       
+    
+}
+.dropdown-menu{
+   --bs-dropdown-link-active-bg:rgb(7, 7, 7);
+}
+
+/* ABOUT PAGE */
+
+#about-top{
+    width: 100%;
+    height: auto;    
+}
+#about-top img{
+    width: 100%;
+  height: auto;
+}
+.header-text{
+    color: #00ADB5;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid #00ADB5;
+    font-weight: 400;
+    
+}
+#about-sms p, .justify-paragraph{
+    text-align: justify;
+  text-justify: inter-word;
+    font-family: 'Roboto',sans-serif ;   
+    
+}
+
+
+
