@@ -27,13 +27,14 @@
         }
 .navbar-brand{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
     font-weight: 800;
-    color: white;
+    color: #393E46;
     line-height: 40px;
+    font-size: 1.7rem;
 }
 .navbar-brand:focus, .navbar-brand:hover{
-    color: blue;
+    color: #EEEEEE;
 }
 .navbar{
     z-index: 1;    
@@ -105,9 +106,28 @@
 }
 #about-sms p, .justify-paragraph{
     text-align: justify;
-  text-justify: inter-word;
+    text-justify: inter-word;
     font-family: 'Roboto',sans-serif ;   
     
+}
+
+.vision-border{
+    border-left: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to top, tomato, black);
+}
+.header-border{
+    border-bottom: 5px solid darkblue;
+    border-radius: 15px
+}
+.mv-img-translate{
+    width:100%;
+    transition: transform 1s;
+    
+}
+.mv-img-translate:hover{
+    transform: translate(0px, 50px);
 }
 
 
