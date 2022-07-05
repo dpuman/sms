@@ -1,14 +1,19 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
 #header::before{
     content: "";
     /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(0,0,0,1)) , url('../images/cover.jpg');   */
-    background-image:  url('../images/cover.jpg');  
+    background-image:  url('../images/cover.jpg'); 
     position: absolute;
     top: 0px;
     left: 0px;
     z-index: -1;    
     height: 760px;
     width: 100%;
+    background-position: center center;
     background-size: cover;
+
 }
 #header{
     height: 760px;
@@ -52,6 +57,18 @@
     border-bottom: 4px solid red;
     
 }
+@media only screen and (max-width: 500px) {
+    .navbar-brand{
+        
+        font-size: 1.0rem;
+    }
+}
+@media only screen and (max-width: 577px) {
+    #about-top img{
+        width: auto;
+        height: auto;
+    }
+}
 
 @media only screen and (max-width: 992px) {
     .navbar-collapse{
@@ -77,7 +94,12 @@
     .dropdown-menu{
         --bs-dropdown-link-active-bg:rgb(7, 7, 7);
     }
+    #volunteers .col{
+        margin-bottom: 100px;
+    }
 }
+
+
 
 .navbar-nav{
     --bs-nav-link-hover-color:silver;       
@@ -95,7 +117,7 @@
 }
 #about-top img{
     width: 100%;
-  height: auto;
+    height: auto;
 }
 .header-text{
     color: #00ADB5;
@@ -130,5 +152,24 @@
     transform: translate(0px, 50px);
 }
 
+.icon-color, .volunteers-desig{
+    color: #00ADB5;
 
+}
+.voluntr-img{
+    width:70%;
+    height: 90%;
+    border-radius: 50%;
+    position: relative;
+    left:18%;
+    top:-80px;
+}
+#volunteers{
+    background-color: silver;
+    padding-top: 20px;
+    
+}
+#volunteers .card-body{
+    margin-top: -80px;
+}
 
