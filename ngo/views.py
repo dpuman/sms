@@ -1,5 +1,6 @@
+from msilib.schema import ListView
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
 
 
 class MyHome(TemplateView):
@@ -8,3 +9,7 @@ class MyHome(TemplateView):
 
 class About(TemplateView):
     template_name = "ngo/about.html"
+
+
+class DonorPartnership(TemplateView):
+    template_name = "ngo/donor-partnership.html"

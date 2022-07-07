@@ -9,7 +9,6 @@
 
     <nav class="my-navbar navbar navbar-expand-lg navbar-border">
         <div class="container-fluid ">
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -55,8 +54,16 @@
                         <a class="nav-link " href="#">NEWS AND EVENTS</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">DONORS AND PARTNERSHIPS</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{% url 'donor_partnership' %}" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            DONORS AND PARTNERSHIPS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{% url 'donor_partnership' %}">DONORS PROJECTS</a></li>
+                            <li><a class="dropdown-item" href="{% url 'donor_partnership' %}">PARTNERSHIP PROJECTS</a>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="nav-item">
