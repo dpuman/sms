@@ -44,8 +44,10 @@
                             PROJECTS
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">ONGOING PROJECTS</a></li>
-                            <li><a class="dropdown-item" href="#">PREVIOUS PROJECTS</a></li>
+                            <li><a class="dropdown-item" href="{% url 'projects' 'ongoing' %}">ONGOING PROJECTS</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{% url 'projects' 'previous' %}">PREVIOUS PROJECTS</a>
+                            </li>
 
                         </ul>
                     </li>
@@ -60,8 +62,10 @@
                             DONORS AND PARTNERSHIPS
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{% url 'donor_partnership' %}">DONORS PROJECTS</a></li>
-                            <li><a class="dropdown-item" href="{% url 'donor_partnership' %}">PARTNERSHIP PROJECTS</a>
+                            <li><a class="dropdown-item" href="{% url 'donor_partnership' %}#donor-projects">DONORS
+                                    PROJECTS</a></li>
+                            <li><a class="dropdown-item"
+                                    href="{% url 'donor_partnership' %}#partnership-projects">PARTNERSHIP PROJECTS</a>
                             </li>
                         </ul>
                     </li>
